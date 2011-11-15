@@ -1,0 +1,162 @@
+/*
+ * Copyright © 2011 Sergey Marin
+ *
+ * Плагин Facebook: публикация в ленту страницы (page) и добавление виджетов
+ * Автор: Sergey Marin
+ * Профиль: http://livestreet.ru/profile/HangGlider/
+ * Сайт: http://sergeymarin.com
+ *
+ * GNU General Public License, version 2:
+ * http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+ *
+ */
+
+
+
+#PluginFacebook {
+    padding: 10px 50px;
+}
+
+    /* общее */
+    #PluginFacebook a[target="_blank"] {
+        background:url("../images/external-small.png") no-repeat right;
+        padding-right:16px;
+
+    }
+
+    #PluginFacebook h1, #PluginFacebook h2 {
+        margin: 25px 0 10px 0;
+    }
+    #PluginFacebook h1 {
+        font-size: 1.7em;
+    }
+    #PluginFacebook h2 {
+        font-size: 1.5em;
+    }
+
+    /* настройка */
+    #PluginFacebook #wizard ul.test-list {
+        font-size: 1.2em;
+        margin-left: 3em;
+    }
+
+        #PluginFacebook #wizard ul.test-list li {
+            background: url("../images/clock.png") no-repeat;
+            padding-left: 20px;
+            height: 30px;
+        }
+
+            #PluginFacebook #wizard ul.test-list li.test-stage-active {
+                font-weight: bold;
+                background: url("../images/loader.gif") no-repeat;
+            }
+
+            #PluginFacebook #wizard ul.test-list li.test-stage-complete {
+                color: #008000;
+                background: url("../images/accept_blue.png") no-repeat;
+            }
+
+            #PluginFacebook #wizard ul.test-list li.test-stage-error {
+                color: black;
+                background: url("../images/stop_round.png") no-repeat;
+            }
+
+    #PluginFacebook #wizard .step-data {
+        padding: 40px;
+    }
+
+        #PluginFacebook #wizard .step-data .note {
+            font-size: 80%;
+            color: #666666;
+        }
+
+        #PluginFacebook #wizard .step-data label {
+            width: 160px;
+            display: block;
+            text-align: right;
+            height: 20px;
+            line-height: 20px;
+            float: left;
+            padding-right: 5px;
+        }
+
+        #PluginFacebook #wizard .step-data input.wide {
+            width: 270px;
+        }
+
+        #PluginFacebook #wizard .step-data p {
+            padding: 3px;
+            margin: 3px;
+        }
+
+    #PluginFacebook #wizard #page-selector {
+        display: none;
+    }
+        #PluginFacebook #wizard #page-selector select {
+            width: 350px;
+        }
+
+        #PluginFacebook #wizard #page-selector #page_select_rights {
+            width:24px;
+            height:22px;
+        }
+            #PluginFacebook #wizard #page-selector #page_select_rights.perm {
+                background:#66ff66;
+                background:url("../images/perm.png") no-repeat 3px 1px;
+            }
+
+            #PluginFacebook #wizard #page-selector #page_select_rights.noperm {
+                background:#ff3333;
+                background:url("../images/noperm.png") no-repeat 3px 1px;
+            }
+
+            #PluginFacebook #wizard #page-selector #page_select_rights.check {
+                background:url("../images/magnifier.png") no-repeat 3px 1px;
+            }
+
+
+            #PluginFacebook #wizard #page_permissions_warn {
+                display:none;
+                line-height:14px;
+                border:1px solid red;
+                padding:10px;
+                -moz-border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -khtml-border-radius: 5px;
+                border-radius: 5px;
+                background:#ffcccc;
+            }
+
+    /* главная */
+    #PluginFacebook  ul.features {
+        margin-left: 25px;
+    }
+
+    #PluginFacebook  ul.features li {
+        font-size: 1em;
+        list-style: circle;
+        margin: 7px 0;
+    }
+
+
+/* публикации */
+#PluginFacebook  ul.info li {
+    float: left;
+    padding: 0 5px;
+}
+
+    #PluginFacebook  ul.info li.facebook_status_published {
+        background: url("../images/facebook_ok.png") no-repeat;
+        padding-left: 25px;
+    }
+
+    #PluginFacebook  ul.info li.facebook_status_blocked {
+        background: url("../images/stop_round.png") no-repeat;
+        padding-left: 25px;
+        color: #ff8c00;
+    }
+
+table.money tr td {
+    padding:10px;
+    vertical-align:top;
+}
